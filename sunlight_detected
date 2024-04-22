@@ -28,7 +28,7 @@ void loop() {
     
     if (lux >= 400) {
       triggerWebhook("sunlight_detected");
-    } else if (lux < 10) {
+    } else if (lux < 100) {
       triggerWebhook("No_sunlight_detected");
     }
     delay(30000); // Wait for 30 seconds before reading light level again
